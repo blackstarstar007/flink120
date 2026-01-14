@@ -1,0 +1,10 @@
+#!/bin/bash
+set -e
+
+cd $DOCKER_BUILD_DIR
+
+IMAGE_PATH=$DOCKER_REGISTRY/$IMAGE_NAMESPACE/$IMAGE_NAME:$IMAGE_TAG
+
+docker build . -f $DOCKERFILE_PATH -t $IMAGE_PATH
+
+docker push $IMAGE_PATH
