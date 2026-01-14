@@ -1,5 +1,5 @@
 #FROM flink:1.20.0-scala_2.12-java11
-FROM 192.168.196.110:5000/bigdata/flink:1.20.0 AS base
+FROM apache/flink:1.20.0 AS base
 
 # 设置环境变量
 ENV FLINK_HOME=/opt/flink
