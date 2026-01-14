@@ -300,9 +300,9 @@ rest:
 metrics.reporter.prom.factory.class: org.apache.flink.metrics.prometheus.PrometheusReporterFactory
 
 # s3密钥配置
-s3.endpoint: http://192.168.192.158:9000
+s3.endpoint: http://127.0.0.1:9000
 s3.access-key: OFHdr4hB4CWYb6vemDsM
-s3.secret-key: r0LIcr4BbcmvllRKpwMBMXiDbQpJ5J2a0UrG2GDI
+s3.secret-key: 123456
 
 # 存储位置
 state.backend.type: rocksdb
